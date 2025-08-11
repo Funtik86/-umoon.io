@@ -83,6 +83,7 @@
 /* --- Для экранов 1024px и меньше --- */
 @media (max-width: 1024px) {
     .container {
+      flex-direction: column;
         gap: 16px; /* на 20% меньше */
     }
     .left {
@@ -113,6 +114,8 @@
 /* --- Для экранов 320px и меньше (в одну колонку, компактно) --- */
 @media (max-width: 320px) {
     .container {
+            flex-direction: column;
+
         gap: 10px;
     }
     .right {
