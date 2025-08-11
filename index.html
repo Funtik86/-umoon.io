@@ -83,37 +83,40 @@
 /* --- Для экранов 1024px и меньше --- */
 @media (max-width: 1024px) {
     .container {
+        gap: 16px; /* на 20% меньше */
+    }
+    .left {
+        font-size: 0.9rem; /* уменьшение текста */
+    }
+    .right {
+        height: 240px; /* уменьшение высоты */
+    }
+}
+
+/* --- Для экранов 768px и меньше (в одну колонку) --- */
+@media (max-width: 768px) {
+    .container {
         flex-direction: column;
         align-items: center;
     }
     .left, .right {
-        width: 90%;
-    }
-    .right {
-        height: 250px;
-    }
-}
-
-/* --- Для экранов 768px и меньше --- */
-@media (max-width: 768px) {
-    .left, .right {
         width: 100%;
     }
     .right {
-        height: 200px;
+        height: 220px;
     }
     .left {
         font-size: 0.95rem;
     }
 }
 
-/* --- Для экранов 320px и меньше (мобильные) --- */
+/* --- Для экранов 320px и меньше (в одну колонку, компактно) --- */
 @media (max-width: 320px) {
     .container {
         gap: 10px;
     }
     .right {
-        height: 150px;
+        height: 160px;
     }
     .left {
         font-size: 0.85rem;
