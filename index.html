@@ -1,118 +1,133 @@
-
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="uMoon Token - The only meme token with a unicorn twist. Join the ride to the moon!">
-    <title>uMoon Token</title>
+    <title>UMoon Token</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom right, #1a1a1a, #3d0066);
+            background: linear-gradient(to right, #1e0033, #4b0082);
             color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
             text-align: center;
             padding: 20px;
         }
-        header {
-            margin-bottom: 40px;
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
-        h1 {
-            font-size: 3em;
-            margin: 0;
+        header p {
+            font-size: 1.2rem;
         }
-        p {
-            font-size: 1.2em;
-            margin-top: 10px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 40px;
+            gap: 40px;
         }
-        .btn {
-            display: inline-block;
-            margin: 15px;
-            padding: 15px 25px;
-            font-size: 1.1em;
-            color: white;
-            background-color: #ff3399;
+        .left-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .right-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px dashed white;
+            height: 300px;
+            text-align: center;
+        }
+        .countdown {
+            font-size: 2rem;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .buttons a {
+            background: #ff6600;
+            padding: 12px 20px;
             border-radius: 8px;
+            color: white;
             text-decoration: none;
-            transition: 0.3s;
+            font-weight: bold;
+            transition: background 0.3s;
         }
-        .btn:hover {
-            background-color: #ff66b3;
-        }
-        .nft-btn {
-            background-color: #00cc99;
-        }
-        .nft-btn:hover {
-            background-color: #33e6b3;
-        }
-        footer {
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #cccccc;
+        .buttons a:hover {
+            background: #cc5200;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <img src="image.jpg" alt="CryptoUnicorn Token" class="logo">
-        <h1>🚀 uMoon Token 🦄</h1>
-        <p>The meme token that combines unicorn magic with lunar dreams!</p>
+       <img src="image.jpg" alt="CryptoUnicorn Token" class="logo">
+        <h1>🚀 Welcome to UMoon Token</h1>
+        <p>The only meme token with 1 unique NFT on Binance Auction</p>
     </header>
 
-    <main>
-        <a href="https://x.com/UmoonUnicorn?t=mDvzB2NDNP_05rs3fLYATA&s=09" target="_blank" class="btn">
-            Follow us on X (Twitter)
-        </a>
-        <a href="https://app.binance.com/en/mp-cms/app/cc0631b?_dp=Ym5jOi8vYXBwLmJpbmFuY2UuY29tL21wL2FwcD9hcHBJZD0xa3E5NGpGaVMzTExCWlRXVTlDMUxWJnN0YXJ0UGFnZVBhdGg9Y0dGblpYTXZiM1JvWlhJdmQyVmlMMmx1WkdWNCZzdGFydFBhZ2VRdWVyeT13ZWJTcmMlMjUzRCUyNTI1N0IlMjUyNTIyc3JjJTI1MjUyMiUyNTI1M0ElMjUyNTIyJTI1MjUyRnJ1JTI1MjUyRm5mdCUyNTI1MkZpdGVtJTI1MjUyRjM2OTIyMzE2JTI1MjUyMiUyNTI1MkMlMjUyNTIyaXNDb25jYXRlbmF0ZWQlMjUyNTIyJTI1MjUzQXRydWUlMjUyNTdEJnNjZW5lVmFsdWU9MTMwMA&description=Explore+Premium%2C+Unique+and+Exclusive+NFTs&title=Binance+NFT&utm_campaign=app_mini_program_share_link&utm_content=1kq94jFiS3LLBZTWU9C1LV&utm_source=mini_program" target="_blank" class="btn nft-btn">
-            Buy the Exclusive NFT on Binance
-        </a>
-    </main>
-   <img src="Мифический единорог на Bitcoin монете (1).png" alt="CryptoUnicorn Token" class="logo">
-   
-   <p>Meet $UMOON — a token born from the fusion of a mythical unicorn and the unstoppable growth of Bitcoin. This is not just an asset — it is a symbol of the aspiration "To The Moon", drawn with green candles on the chart of the future.
+    <div class="countdown" id="countdown"></div>
 
-🚀 Why $UMOON?
+    <div class="container">
+        <div class="left-text">
+            <p>
+                UMoon is the first meme token that combines the hype of crypto with a single exclusive NFT, 
+                available only through a Binance auction.  
+                Our mission is to send our community to the moon with fun, engagement, and real rewards.  
+                Only 1 NFT will ever exist – and it will be owned by a single lucky holder forever.
+            </p>
+            <p>
+                Join us in this unique journey, be part of the most exciting meme project of the year, and 
+                don't miss your chance to own the one and only UMoon NFT!
+            </p>
+        </div>
+        <div class="right-image">
+            <p>🖼 Your image here</p>
+        </div>
+    </div>
 
-🔥 Viral brand — art that conquers social media feeds
+    <div class="buttons">
+        <a href="https://x.com/UmoonUnicorn?t=mDvzB2NDNP_05rs3fLYATA&s=09" target="_blank">🐦 Follow on X</a>
+        <a href="PASTE_TOKEN_BUY_LINK_HERE" target="_blank">💰 Buy UMoon Token</a>
+        <a href="https://app.binance.com/en/mp-cms/app/cc0631b?_dp=Ym5jOi8vYXBwLmJpbmFuY2UuY29tL21wL2FwcD9hcHBJZD0xa3E5NGpGaVMzTExCWlRXVTlDMUxWJnN0YXJ0UGFnZVBhdGg9Y0dGblpYTXZiM1JvWlhJdmQyVmlMMmx1WkdWNCZzdGFydFBhZ2VRdWVyeT13ZWJTcmMlMjUzRCUyNTI1N0IlMjUyNTIyc3JjJTI1MjUyMiUyNTI1M0ElMjUyNTIyJTI1MjUyRnJ1JTI1MjUyRm5mdCUyNTI1MkZpdGVtJTI1MjUyRjM2OTIyMzE2JTI1MjUyMiUyNTI1MkMlMjUyNTIyaXNDb25jYXRlbmF0ZWQlMjUyNTIyJTI1MjUzQXRydWUlMjUyNTdEJnNjZW5lVmFsdWU9MTMwMA&description=Explore+Premium%2C+Unique+and+Exclusive+NFTs&title=Binance+NFT&utm_campaign=app_mini_program_share_link&utm_content=1kq94jFiS3LLBZTWU9C1LV&utm_source=mini_program" target="_blank">🎨 Buy NFT</a>
+    </div>
 
-💎 Limited emission — a rarity, like a real digital unicorn
+    <script>
+        // Countdown timer
+        const countdown = document.getElementById("countdown");
+        const targetDate = new Date("August 11, 2025 18:00:00 UTC").getTime();
 
-📈 Growth on green candles — the chart is inspired by a real bullish trend
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
 
-🌕 Goal — Moon — each holder brings the project closer to the stars
+            if (distance < 0) {
+                countdown.innerHTML = "🚀 Launched!";
+                return;
+            }
 
-💼 Ideal for:
-NFT collectors, crypto enthusiasts, meme economy and those who believe in the power of community.</p>
-  
-    </header>
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    <footer>
-        <p>© 2025 uMoon Token. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-<script>
-    const targetDate = new Date("2025-08-11T18:00:00Z").getTime();
-
-    const countdown = setInterval(() => {
-        const now = new Date().getTime();
-        const distance = targetDate - now;
-
-        if (distance <= 0) {
-            document.getElementById("countdown").innerHTML = "🚀 LAUNCHED!";
-            clearInterval(countdown);
-            return;
+            countdown.innerHTML = `⏳ ${days}d ${hours}h ${minutes}m ${seconds}s`;
         }
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.getElementById("countdown").innerHTML = 
-            days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-    }, 1000);
-</script>
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
 
 </body>
 </html>
