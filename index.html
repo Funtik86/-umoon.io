@@ -79,6 +79,47 @@
             background: #cc5200;
         
         }
+
+/* --- Для экранов 1024px и меньше --- */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left, .right {
+        width: 90%;
+    }
+    .right {
+        height: 250px;
+    }
+}
+
+/* --- Для экранов 768px и меньше --- */
+@media (max-width: 768px) {
+    .left, .right {
+        width: 100%;
+    }
+    .right {
+        height: 200px;
+    }
+    .left {
+        font-size: 0.95rem;
+    }
+}
+
+/* --- Для экранов 320px и меньше (мобильные) --- */
+@media (max-width: 320px) {
+    .container {
+        gap: 10px;
+    }
+    .right {
+        height: 150px;
+    }
+    .left {
+        font-size: 0.85rem;
+    }
+}
+
         
     </style>
 </head>
